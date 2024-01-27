@@ -7,8 +7,8 @@ const app = Vue.createApp({
   data () {
     return {
       login: {
-        username: 'vueJS_2024@gmail.com',
-        password: 'vuejs2024'
+        username: '',
+        password: ''
       },
       apiUrl: 'https://vue3-course-api.hexschool.io/v2'
     }
