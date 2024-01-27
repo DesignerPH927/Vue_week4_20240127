@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+  <div id="app">
+    <div class="border border-3
+    rounded-2 border-primary
+    p-4 mx-3">
+      <h3 class="fw-bold fs-4 text-primary
+      mb-3 text-center">
+        Admin
+      </h3>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input type="email"
+          class="form-control"
+          placeholder="email"
+          id="email"
+          v-model.trim="login.username">
+          <label for="email"
+          class="form-label">Email</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input type="password"
+          class="form-control"
+          placeholder="password"
+          id="password"
+          v-model="login.password">
+          <label for="password" 
+          lass="form-label">
+            password
+          </label>
+        </div>
+      </div>
+      <div class="mb-2">
+        <button class="btn btn-outline-primary
+        w-100 fs-3 fw-bold"
+        type="button"
+        style="text-transform: uppercase;"
+        @click="loginAdmin"
+        >login</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- vue -->
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
